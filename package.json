@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "tsx": "^4.20.3"
+  },
+  "name": "playwright_wam",
+  "description": "\"# playwright_wam\"",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "codegen": "npx playwright codegen",
+    "install:browsers": "npx playwright install",
+    "setup:db": "node setup-db.js",
+    "test:with-db": "npm run setup:db && npx playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wwamia/playwright_wam.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wwamia/playwright_wam/issues"
+  },
+  "homepage": "https://github.com/wwamia/playwright_wam#readme",
+  "type": "commonjs"
+}
