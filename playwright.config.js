@@ -1,9 +1,9 @@
 const { defineConfig } = require('@playwright/test');
 
 module.exports = defineConfig({
-  testDir: './Tests',                            // Folder to look for test files
-  testMatch: '**/*.spec.{js,ts}',                // Match .spec.js and .spec.ts files
-  timeout: 30000,                                // Per-test timeout
+  testDir: './Tests',                                   // Folder to look for test files
+  testMatch: ['**/*.spec.{js,ts}', '**/test.{js,ts}'],  // Match .spec.js/.ts and test.js/.ts
+  timeout: 30000,                                       // Per-test timeout
 
   reporter: [['html', { 
     outputFolder: 'playwright-report', 
