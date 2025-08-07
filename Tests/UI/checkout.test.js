@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
-const { LoginPage } = require('../POM-Pages/loginPage');
-const { InventoryPage } = require('../POM-Pages/inventoryPage');
-const { CheckoutPage } = require('../POM-Pages/checkoutPage');
+const { LoginPage } = require('./POM-Pages/loginPage');
+const { InventoryPage } = require('./POM-Pages/inventoryPage');
+const { CheckoutPage } = require('./POM-Pages/checkoutPage');
 
 test.describe('Checkout Tests', () => {
   test.beforeEach(async ({ page }) => {

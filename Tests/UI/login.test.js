@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { LoginPage } = require('../POM-Pages/loginPage');
+const { LoginPage } = require('./POM-Pages/loginPage');
 
 test.describe('Login Tests', () => {
   test.beforeEach(async ({ page }) => {
