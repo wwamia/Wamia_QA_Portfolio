@@ -27,11 +27,6 @@ jobs:
         run: npx playwright install --with-deps
 
       # Start local server before testing
-      - name: Start application
-        run: |
-          npm run dev &                   # No build step
-          npx wait-on http://localhost:3000
-
       - name: Run Playwright tests
         run: npx playwright test
 
