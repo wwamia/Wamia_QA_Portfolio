@@ -26,11 +26,10 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      # Optional: Start local server before testing
+      # Start local server before testing
       - name: Start application
         run: |
-          npm run build     # Comment this if not needed
-          npm run preview & # Replace with: npm run dev & if needed
+          npm run dev &                   # No build step
           npx wait-on http://localhost:3000
 
       - name: Run Playwright tests
