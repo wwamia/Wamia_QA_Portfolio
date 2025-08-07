@@ -4,31 +4,31 @@ exports.CheckoutPage = class CheckoutPage {
    */
   constructor(page) {
     this.page = page;
-    this.checkoutButton = page.locator('#checkout');
+    this.checkoutBtn = page.locator('#checkout');
     this.firstNameInput = page.locator('#first-name');
     this.lastNameInput = page.locator('#last-name');
     this.zipInput = page.locator('#postal-code');
-    this.continueButton = page.locator('#continue');
-    this.finishButton = page.locator('#finish');
-    this.successMessage = page.locator('.complete-header');
+    this.continueBtn = page.locator('#continue');
+    this.finishBtn = page.locator('#finish');
+    this.successMsg = page.locator('.complete-header');
   }
 
   async startCheckout() {
-    await this.checkoutButton.click();
+    await this.checkoutBtn.click();
   }
 
   async fillCustomerInfo(first, last, zip) {
     await this.firstNameInput.fill(first);
     await this.lastNameInput.fill(last);
     await this.zipInput.fill(zip);
-    await this.continueButton.click();
+    await this.continueBtn.click();
   }
 
   async completeOrder() {
-    await this.finishButton.click();
+    await this.finishBtn.click();
   }
 
-  async getSuccessMessage() {
-    return await this.successMessage.textContent();
+  async getSuccessMsg() {
+    return await this.successMsg.textContent();
   }
 };

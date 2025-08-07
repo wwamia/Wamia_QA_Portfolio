@@ -4,16 +4,16 @@ exports.InventoryPage = class InventoryPage {
    */
   constructor(page) {
     this.page = page;
-    this.inventoryItemButton = page.locator('.inventory_item button');
-    this.cartButton = page.locator('.shopping_cart_link');
+    this.inventoryItemBtn = page.locator('.inventory_item button');
+    this.cartBtn = page.locator('.shopping_cart_link');
   }
 
   async addFirstItemToCart() {
-    await this.inventoryItemButton.first().click();
+    await this.inventoryItemBtn.first().click();
   }
 
   async goToCart() {
-    await this.cartButton.click();
+    await this.cartBtn.click();
   }
 
   async isLoaded() {

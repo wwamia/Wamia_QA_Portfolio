@@ -3,12 +3,12 @@ const { LoginPage } = require('../POM-Pages/loginPage');
 const { InventoryPage } = require('../POM-Pages/inventoryPage');
 const { CheckoutPage } = require('../POM-Pages/checkoutPage');
 
-test.describe('Checkout Tests with POM', () => {
+test.describe('Checkout Tests', () => {
   test.beforeEach(async ({ page }) => {
     const loginPage = new LoginPage(page);
     const inventoryPage = new InventoryPage(page);
 
-    await loginPage.goto();
+    await loginPage.goToPage();
     await loginPage.login('standard_user', 'secret_sauce');
     await inventoryPage.isLoaded();
     await inventoryPage.addFirstItemToCart();
@@ -22,7 +22,7 @@ test.describe('Checkout Tests with POM', () => {
     await checkoutPage.fillCustomerInfo('Jane', 'Doe', '12345');
     await checkoutPage.completeOrder();
 
-    const success = await checkoutPage.getSuccessMessage();
+    const success = await checkoutPage.getSuccessMsg();
     expect(success).toContain('Thank you');
   });
 });

@@ -6,21 +6,21 @@ exports.LoginPage = class LoginPage {
     this.page = page;
     this.usernameInput = page.locator('#user-name');
     this.passwordInput = page.locator('#password');
-    this.loginButton = page.locator('#login-button');
-    this.errorMessage = page.locator('[data-test="error"]');
+    this.loginBtn = page.locator('#login-button');
+    this.errorMsg = page.locator('[data-test="error"]');
   }
 
-  async goto() {
+  async goToPage() {
     await this.page.goto('https://www.saucedemo.com/');
   }
 
   async login(username, password) {
     await this.usernameInput.fill(username);
     await this.passwordInput.fill(password);
-    await this.loginButton.click();
+    await this.loginBtn.click();
   }
 
-  async getErrorMessage() {
-    return await this.errorMessage.textContent();
+  async getErrorMsg() {
+    return await this.errorMsg.textContent();
   }
 };
