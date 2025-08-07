@@ -1,10 +1,14 @@
 {
   "dependencies": {
     "better-sqlite3": "^11.10.0",
+    "chromedriver": "^138.0.5",
+    "selenium-webdriver": "^4.33.0",
     "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "@playwright/test": "^1.54.2",
+    "mocha": "^11.7.1",
+    "playwright": "^1.54.2",
     "tsx": "^4.20.3"
   },
   "name": "playwright_wam",
