@@ -33,7 +33,6 @@ jobs:
           npx wait-on http://localhost:3000/tasks
           npx playwright test --grep @api
 
-
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
