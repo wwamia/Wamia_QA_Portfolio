@@ -17,7 +17,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "mock-api": "json-server db.json --port 3000",
+    "mock-api": "kill-port 3000 && json-server db.json --port 3000",
     "test:api": "playwright test --grep @api",
     "test:api:run": "concurrently -k -s first -n \"API,TEST\" -c green,blue \"npm run mock-api\" \"npm run test:api\"",
     "test": "npx playwright test",

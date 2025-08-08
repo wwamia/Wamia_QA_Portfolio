@@ -26,11 +26,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run API tests with mock server
+      - name: Start mock API and run API tests
         run: |
-          npx concurrently -k -s first -n "API,TEST" -c green,blue \
-            "npx json-server db.json --port 3000" \
-            "npx wait-on http://localhost:3000/users && npx playwright test tests --grep '@api'"
+          npx kill-port 3000 || true
+          npx json-server db.json --port 3000 &
+          npx wait-on http://localhost:3000/tasks
+          npx playwright test --grep @api
+
 
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
