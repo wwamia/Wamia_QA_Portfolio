@@ -30,8 +30,9 @@ jobs:
         run: |
           npx kill-port 3000 || true
           npx json-server db.json --port 3000 &
-          npx wait-on http://localhost:3000/tasks
+          npx wait-on http://localhost:3000/users
           npx playwright test --grep @api
+
 
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
