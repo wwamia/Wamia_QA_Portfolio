@@ -7,6 +7,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.54.2",
+    "concurrently": "^9.2.0",
     "mocha": "^11.7.1",
     "playwright": "^1.54.2",
     "tsx": "^4.20.3"
@@ -16,6 +17,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "mock-api": "json-server db.json --port 3000",
+    "test:api": "playwright test --grep @api",
+    "test:api:run": "concurrently -k -s first -n \"API,TEST\" -c green,blue \"npm run mock-api\" \"npm run test:api\"",
     "test": "npx playwright test",
     "test:ui": "npx playwright test --ui",
     "codegen": "npx playwright codegen",
