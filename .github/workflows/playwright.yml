@@ -37,3 +37,11 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./playwright-report
           publish_branch: gh-pages
+
+      - name: Comment GitHub Pages report link
+        if: github.event_name == 'pull_request'
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          message: |
+            Playwright Test Report  
+            View the report at: https://wwamia.github.io/Wamia_QA_Portfolio/playwright-report/
