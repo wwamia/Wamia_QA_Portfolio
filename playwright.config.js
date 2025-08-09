@@ -20,6 +20,7 @@ module.exports = defineConfig({
 
 export default defineConfig({
   projects: [
+    // Desktop browsers
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
@@ -31,6 +32,24 @@ export default defineConfig({
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
+    },
+
+    // Mobile and tablet devices
+    {
+      name: 'iPhone 12',
+      use: { ...devices['iPhone 12'] },
+    },
+    {
+      name: 'iPad Pro 11',
+      use: { ...devices['iPad Pro 11'] },
+    },
+    {
+      name: 'Galaxy Tab S4',
+      use: { ...devices['Galaxy Tab S4'] },
+    },
+    {
+      name: 'Pixel 5',
+      use: { ...devices['Pixel 5'] },
     },
   ],
 });
