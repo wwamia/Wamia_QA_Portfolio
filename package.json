@@ -19,7 +19,7 @@
   "main": "index.js",
   "scripts": {
     "mock-api": "kill-port 3000 && json-server db.json --port 3000",
-    "test:api": "playwright test --grep @api",
+    "test:api": "playwright test Tests/API",
     "test:api:run": "concurrently -k -s first -n \"API,TEST\" -c green,blue \"npm run mock-api\" \"npm run test:api\"",
     "test": "npx playwright test",
     "test:ui": "npx playwright test --ui",
@@ -27,7 +27,7 @@
     "install:browsers": "npx playwright install",
     "report": "npx playwright show-report reports",
     "setup:db": "node setup-db.js",
-    "test:with-db": "npm run setup:db && npx playwright test"
+    "test:with-db": "npm run setup:db && npx playwright test Tests/DB"
   },
   "repository": {
     "type": "git",

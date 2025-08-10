@@ -7,12 +7,14 @@ test.describe('Login Tests', () => {
     await loginPage.goToPage();
   });
 
+  // Valid user id and password login
   test('valid login', async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.login('standard_user', 'secret_sauce');
     await expect(page).toHaveURL(/.*inventory/);
   });
 
+  // User is locked out of account
   test('locked out user', async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.login('locked_out_user', 'secret_sauce');
@@ -21,6 +23,7 @@ test.describe('Login Tests', () => {
     expect(error).toContain('locked out');
   });
 
+  // Invalid user id and password login
   test('invalid login', async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.login('wrong_user', 'wrong_pass');

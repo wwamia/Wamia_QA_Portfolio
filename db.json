@@ -1,11 +1,11 @@
 {
   "users": [
-    { "id": 1, "name": "Alice", "email": "alice@example.com" },
-    { "id": 2, "name": "Bob", "email": "bob@example.com" }
+    { "id": 1, "name": "Michael", "email": "michael@example.com" },
+    { "id": 2, "name": "Jackson", "email": "jackson@example.com" }
   ],
   "tasks": [
-    { "id": 1, "title": "Finish report", "completed": false, "userId": 1 },
-    { "id": 2, "title": "Fix bugs", "completed": true, "userId": 2 }
+    { "id": 1, "title": "Compiled report", "completed": false, "userId": 1 },
+    { "id": 2, "title": "Fixed bug", "completed": true, "userId": 2 }
   ],
   "settings": {
     "theme": "dark",
