@@ -31,7 +31,7 @@ jobs:
           npx kill-port 3000 || true
           npx json-server db.json --port 3000 &
           npx wait-on http://localhost:3000/users
-          npx playwright test --grep @api
+          npx playwright test Tests/API
 
 
       - name: Install Playwright browsers
