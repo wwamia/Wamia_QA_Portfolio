@@ -26,10 +26,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Start mock API and run API tests
+      - name: Start mock API DB and run API tests
         run: |
           npx kill-port 3000 || true
-          npx json-server db.json --port 3000 &
+          npx json-server api-db.json --port 3000 &
           npx wait-on http://localhost:3000/users
           npx playwright test Tests/API
 

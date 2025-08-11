@@ -15,14 +15,55 @@ test.describe('Checkout Tests', () => {
     await inventoryPage.goToCart();
   });
 
+  // Valid checkout process
   test('complete checkout successfully', async ({ page }) => {
     const checkoutPage = new CheckoutPage(page);
 
     await checkoutPage.startCheckout();
-    await checkoutPage.fillCustomerInfo('Jane', 'Doe', '12345');
+    await checkoutPage.fillCustomerInfo('Michael', 'Jackson', '12345');
     await checkoutPage.completeOrder();
 
     const success = await checkoutPage.getSuccessMsg();
     expect(success).toContain('Thank you');
   });
+
+  // Checkout fails with missing info: last name
+  test('checkout fails with missing last name', async ({ page }) => {
+    const checkoutPage = new CheckoutPage(page);
+
+    await checkoutPage.startCheckout();
+    await checkoutPage.inputFirstName('Michael');
+    await checkoutPage.inputZip('12345'); 
+    await checkoutPage.clickOnContinueBtn();
+
+    const errorMsg = await checkoutPage.getErrorMsg();
+    expect(errorMsg).toContain('Error'); 
+  });
+
+  // Checkout fails with missing info: first name
+  test('checkout fails with missing first name', async ({ page }) => {
+    const checkoutPage = new CheckoutPage(page);
+
+    await checkoutPage.startCheckout();
+    await checkoutPage.inputLastName('Jackson');
+    await checkoutPage.inputZip('12345'); 
+    await checkoutPage.clickOnContinueBtn();
+
+    const errorMsg = await checkoutPage.getErrorMsg();
+    expect(errorMsg).toContain('Error'); 
+  });
+
+  // Checkout fails with missing info: postal code
+  test('checkout fails with missing postal code', async ({ page }) => {
+  const checkoutPage = new CheckoutPage(page);
+
+  await checkoutPage.startCheckout();
+  await checkoutPage.inputFirstName('Michael');
+  await checkoutPage.inputLastName('Jackson');
+  await checkoutPage.clickOnContinueBtn();
+
+  const errorMsg = await checkoutPage.getErrorMsg();
+  expect(errorMsg).toContain('Error'); 
+  });
 });
+

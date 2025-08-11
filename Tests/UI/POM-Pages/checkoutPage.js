@@ -24,11 +24,31 @@ exports.CheckoutPage = class CheckoutPage {
     await this.continueBtn.click();
   }
 
+  async inputFirstName(first) {
+    await this.firstNameInput.fill(first);
+  }
+
+  async inputLastName(last) {
+    await this.lastNameInput.fill(last);
+  }
+
+  async inputZip(zip) {
+    await this.zipInput.fill(zip);  
+  }
+
+  async clickOnContinueBtn() {
+    await this.continueBtn.click();
+  }
+
   async completeOrder() {
     await this.finishBtn.click();
   }
 
   async getSuccessMsg() {
     return await this.successMsg.textContent();
+  }
+
+  async getErrorMsg() {
+    return await this.page.locator('.error-message-container').textContent();
   }
 };
