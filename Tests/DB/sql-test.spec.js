@@ -3,6 +3,7 @@ const { test, expect } = require('@playwright/test');
 
 // Verify total number of users in the database
 test('Verify user count from SQL query', async () => {
+  
   const db = new sqlite3.Database('test.db');
 
   await new Promise((resolve, reject) => {
