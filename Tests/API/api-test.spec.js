@@ -1,4 +1,5 @@
 import { test, expect, request } from '@playwright/test';
+
 const baseURL = 'http://localhost:3000';
 
 test.describe('Users API', () => {
