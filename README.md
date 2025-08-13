@@ -23,14 +23,8 @@ Here, you will find hands-on projects that showcase my ability to build and main
 4. [CI-CD Integration](./.github/workflows/)  
    🔄 CI/CD integration was created through Github Actions and are run daily at 3 AM EST.
 
-5. [🛠️ Tools & Technologies](#️tools--technologies)  
-   Full list of stacks, frameworks, and languages used
-
-6. [🧰 Installation & Running Projects](#installation--running-projects)  
-   How to set up and run the test suites
-
 ## 🛠️ Tools & Technologies
-
+Full list of stacks, frameworks, and languages used
 | Category         | Stack / Tools              |
 |:-------------------|:---------------------------|
 | 🖥️ UI Automation    | Playwright                 |
@@ -42,6 +36,7 @@ Here, you will find hands-on projects that showcase my ability to build and main
 | 🔗 Version Control  | Git, GitHub                |
 
 ## 🧰 Installation & Running Projects
+How to set up and run the test suites
 
 ### 🔧 Prerequisites  
 - Node.js & npm  
