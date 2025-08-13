@@ -49,14 +49,20 @@ npm install
 ```
 
 # 3. Install Playwright browser binaries
-<pre> ```bash npx playwright install ``` </pre>
+```bash
+npx playwright install
+```
 
 # 4. Run all Playwright tests
-<pre> ```bash npm run test:all ``` </pre>
+```bash
+npm run test:all
+```
 
 # 5. Run a specific test file
 npx playwright test Tests/<UI, DB or API folder>/<file_name>
-<pre> ```bash npx playwright test Tests/API/api-test.spec.js ``` </pre>
+```bash
+npx playwright test Tests/API/api-test.spec.js
+```
 
 Additionally, the entire test suite can be run through Github Actions under the worflow `Run Playwright Tests`.
 
