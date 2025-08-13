@@ -12,16 +12,16 @@ Here, you will find hands-on projects that showcase my ability to build and main
 ## 🗂️ Table of Contents
 
 1. [UI Automation](./Tests/UI/)  
-   🔍 UI automation tests using Playwright 🎭
+   🔍 UI automation tests 
 
 2. [API testing](./Tests/API/)  
-   ⚙️ API tests using using Playwright 🎭
+   ⚙️ API tests 
 
 3. [SQL testing](./Tests/DB/)  
-   🗄️ End-to-end testing using Playwright 🎭
+   🗄️ SQL tests
 
 4. [CI-CD Integration](./.github/workflows/)  
-   🔄 CI/CD integration using GitHub Actions 🤖
+   🔄 CI/CD integration 
 
 5. [🛠️ Tools & Technologies](#️tools--technologies)  
    Full list of stacks, frameworks, and languages used
@@ -36,24 +36,22 @@ Here, you will find hands-on projects that showcase my ability to build and main
 - Playwright (`npx playwright install`)  
 - Git (for cloning repo)
 
-```bash
 # 1. Clone the repo
-git clone https://github.com/wwamia/Wamia_QA_Portfolio.git
-cd Wamia_QA_Portfolio
+<pre> ```bash git clone https://github.com/wwamia/Wamia_QA_Portfolio.git
+cd Wamia_QA_Portfolio ``` </pre>
 
 # 2. Install Node.js dependencies
-npm install
+<pre> ```bash npm install ``` </pre>
 
 # 3. Install Playwright browser binaries
-npx playwright install
+<pre> ```bash npx playwright install ``` </pre>
 
 # 4. Run all Playwright tests
-npm run test:all
+<pre> ```bash npm run test:all ``` </pre>
 
 # 5. Run a specific test file
 npx playwright test Tests/<UI, DB or API folder>/<file name>
-npx playwright test Tests/API/api-test.spec.js
-```
+<pre> ```bash npx playwright test Tests/API/api-test.spec.js ``` </pre>
 
 Additionally, the entire test suite can be run through Github Actions under the worflow `Run Playwright Tests`.
 
@@ -61,15 +59,16 @@ Additionally, the entire test suite can be run through Github Actions under the 
 
 ## 🛠️ Tools & Technologies
 
-| 📋 Category          | Stack / Tools              |
-|----------------------------------------------------
-| 🖥️ UI Automation     | Playwright                 |
-| ⚙️ API Testing       | Playwright + JSON DB       |
-| 🛢️ SQL Testing       | Playwright + SQLite DB     |
-| 🤖 CI/CD             | GitHub Actions             |
-| 🧪 Test Frameworks   | Playwright Test Runner     |
-| 📦 Package Managers  | npm                        |
-| 🔗 Version Control   | Git, GitHub                |
+| 📋 Category         | Stack / Tools              |
+|:-------------------|:---------------------------|
+| 🖥️ UI Automation    | Playwright                 |
+| ⚙️ API Testing      | Playwright + JSON DB       |
+| 🛢️ SQL Testing      | Playwright + SQLite DB     |
+| 🤖 CI/CD            | GitHub Actions             |
+| 🧪 Test Frameworks  | Playwright Test Runner     |
+| 📦 Package Managers | npm                        |
+| 🔗 Version Control  | Git, GitHub                |
+
 
 ---
 
