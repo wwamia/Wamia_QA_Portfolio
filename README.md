@@ -63,7 +63,7 @@ npx playwright test Tests/<UI, DB or API folder>/<file_name>
 ```bash
 npx playwright test Tests/API/api-test.spec.js
 ```
-
+# 6. CI/CD Integration
 Additionally, the entire test suite can be run through Github Actions under the worflow `Run Playwright Tests`.
 
 ---
