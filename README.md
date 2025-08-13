@@ -42,6 +42,13 @@ git clone https://github.com/wwamia/Wamia_QA_Portfolio.git
 cd Wamia_QA_Portfolio
 `​`​`
 
+```bash
+npm install
+npx playwright install
+npx playwright test
+```
+
+
 # 2. Install Node.js dependencies
 <pre> ```bash npm install ``` </pre>
 
