@@ -37,7 +37,7 @@ Here, you will find hands-on projects that showcase my ability to build and main
 - Git (for cloning repo)
 
 # 1. Clone the repo
-<pre> ```bash git clone https://github.com/wwamia/Wamia_QA_Portfolio.git cd Wamia_QA_Portfolio ``` </pre>
+`​`​`bash git clone https://github.com/wwamia/Wamia_QA_Portfolio.git cd Wamia_QA_Portfolio `​`​`
 
 # 2. Install Node.js dependencies
 <pre> ```bash npm install ``` </pre>
