@@ -44,7 +44,9 @@ cd Wamia_QA_Portfolio
 
 
 # 2. Install Node.js dependencies
-<pre> ```bash npm install ``` </pre>
+```bash
+npm install
+```
 
 # 3. Install Playwright browser binaries
 <pre> ```bash npx playwright install ``` </pre>
