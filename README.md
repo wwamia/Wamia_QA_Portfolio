@@ -37,7 +37,7 @@ Here, you will find hands-on projects that showcase my ability to build and main
 - Git (for cloning repo)
 
 # 1. Clone the repo
-```bash git clone https://github.com/wwamia/Wamia_QA_Portfolio.git cd Wamia_QA_Portfolio ```
+<pre> ```bash git clone https://github.com/wwamia/Wamia_QA_Portfolio.git cd Wamia_QA_Portfolio ``` </pre>
 
 # 2. Install Node.js dependencies
 <pre> ```bash npm install ``` </pre>
@@ -49,7 +49,7 @@ Here, you will find hands-on projects that showcase my ability to build and main
 <pre> ```bash npm run test:all ``` </pre>
 
 # 5. Run a specific test file
-npx playwright test Tests/<UI, DB or API folder>/<file name>
+npx playwright test Tests/<UI, DB or API folder>/<file_name>
 <pre> ```bash npx playwright test Tests/API/api-test.spec.js ``` </pre>
 
 Additionally, the entire test suite can be run through Github Actions under the worflow `Run Playwright Tests`.
