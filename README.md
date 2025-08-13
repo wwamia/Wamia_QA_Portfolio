@@ -78,8 +78,7 @@ Additionally, the entire test suite can be run through Github Actions under the 
 | 🔗 Version Control  | Git, GitHub                |
 
 
---
-
+##
 ✨ Thanks for checking out my QA Automation Portfolio!
 
 
