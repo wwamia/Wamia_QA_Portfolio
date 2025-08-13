@@ -67,7 +67,7 @@ Additionally, the entire test suite can be run through Github Actions under the 
 
 ## 🛠️ Tools & Technologies
 
-| 📋 Category         | Stack / Tools              |
+| Category         | Stack / Tools              |
 |:-------------------|:---------------------------|
 | 🖥️ UI Automation    | Playwright                 |
 | ⚙️ API Testing      | Playwright + JSON DB       |
