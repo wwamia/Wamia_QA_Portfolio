@@ -1,19 +1,13 @@
 # Wamia's QA Portfolio 
 
----
-
 Welcome to my portfolio highlighting some of my skills as a SDET! 👋
 Here, you will find hands-on projects that showcase my ability to build and maintain quality-focused software automation solutions.
-
----
 
 ## ✨ About Me
 
 🎓 I am a recent Engineering grad from the University of Waterloo with a passion for software quality.  
 💻 I have completed 4 SDET/QA co-ops in diverse tech environments, resulting in 2 years of building real-world experience in automation, scripting, and modern testing practices.  
 🚀 I am now focused on growing my career as a full-time SDET, blending engineering rigor with testing excellence.
-
---- 
 
 ## 🗂️ Table of Contents
 
@@ -34,7 +28,7 @@ Here, you will find hands-on projects that showcase my ability to build and main
 
 6. [🧰 Installation & Running Projects](#installation--running-projects)  
    How to set up and run the test suites
----
+
 ## 🧰 Installation & Running Projects
 
 ### 🔧 Prerequisites  
@@ -47,7 +41,6 @@ Here, you will find hands-on projects that showcase my ability to build and main
 git clone https://github.com/wwamia/Wamia_QA_Portfolio.git
 cd Wamia_QA_Portfolio
 ```
-
 
 ### 2. Install Node.js dependencies
 ```bash
@@ -72,8 +65,6 @@ npx playwright test Tests/API/api-test.spec.js
 ### 6. CI/CD Integration
 Additionally, the entire test suite can be run through Github Actions under the worflow `Run Playwright Tests`.
 
----
-
 ## 🛠️ Tools & Technologies
 
 | 📋 Category         | Stack / Tools              |
@@ -87,7 +78,7 @@ Additionally, the entire test suite can be run through Github Actions under the 
 | 🔗 Version Control  | Git, GitHub                |
 
 
----
+--
 
 ✨ Thanks for checking out my QA Automation Portfolio!
 
