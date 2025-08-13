@@ -29,6 +29,50 @@ Here, you will find hands-on projects that showcase my ability to build and main
 6. [🧰 Installation & Running Projects](#installation--running-projects)  
    How to set up and run the test suites
 
-7. [📫 Contact](#contact)  
-   Reach out to connect
+## 🧰 Installation & Running Projects
+
+### 🔧 Prerequisites  
+- Node.js & npm  
+- Playwright (`npx playwright install`)  
+- Git (for cloning repo)
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/wwamia/Wamia_QA_Portfolio.git
+cd Wamia_QA_Portfolio
+
+# 2. Install Node.js dependencies
+npm install
+
+# 3. Install Playwright browser binaries
+npx playwright install
+
+# 4. Run all Playwright tests
+npm run test:all
+
+# 5. Run a specific test file
+npx playwright test Tests/<UI, DB or API folder>/<file name>
+npx playwright test Tests/API/api-test.spec.js
+```
+
+Additionally, the entire test suite can be run through Github Actions under the worflow `Run Playwright Tests`.
+
+---
+
+## 🛠️ Tools & Technologies
+
+| 📋 Category          | Stack / Tools              |
+|----------------------------------------------------
+| 🖥️ UI Automation     | Playwright                 |
+| ⚙️ API Testing       | Playwright + JSON DB       |
+| 🛢️ SQL Testing       | Playwright + SQLite DB     |
+| 🤖 CI/CD             | GitHub Actions             |
+| 🧪 Test Frameworks   | Playwright Test Runner     |
+| 📦 Package Managers  | npm                        |
+| 🔗 Version Control   | Git, GitHub                |
+
+---
+
+✨ Thanks for checking out my QA Automation Portfolio!
+
 
