@@ -64,12 +64,20 @@ npx playwright install
 npm run test:all
 ```
 
-### 5. Run a specific test file
-The following format can be used `npx playwright test Tests/<UI, DB or API folder>/<file_name>`  
-Example:
+### 5. Run a specific test suite
+API test suite:
 ```bash
-npx playwright test Tests/API/api-test.spec.js
+npm run test:api
 ```
+UI test suite:
+```bash
+npm run test:ui
+```
+SQL DB test suite:
+```bash
+npm run test:with-db
+```
+
 ### 6. CI/CD Integration
 Additionally, the entire test suite can be run through Github Actions under the worflow `Run Playwright Tests`.
 
