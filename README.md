@@ -1,6 +1,7 @@
 # Wamia's QA Portfolio 
 
 Welcome to my portfolio highlighting some of my skills as a SDET! 👋
+
 Here, you will find hands-on projects that showcase my ability to build and maintain quality-focused software automation solutions.
 
 ## ✨ About Me
@@ -66,6 +67,8 @@ npm run test:all
 
 ### 5. Run a specific test file
 npx playwright test Tests/<UI, DB or API folder>/<file_name>
+
+Example:
 ```bash
 npx playwright test Tests/API/api-test.spec.js
 ```
