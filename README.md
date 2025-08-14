@@ -65,7 +65,7 @@ npm run test:all
 ```
 
 ### 5. Run a specific test file
-npx playwright test Tests/<UI, DB or API folder>/<file_name>  
+The following format can be used `npx playwright test Tests/<UI, DB or API folder>/<file_name>`  
 Example:
 ```bash
 npx playwright test Tests/API/api-test.spec.js
