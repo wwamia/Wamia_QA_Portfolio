@@ -40,8 +40,7 @@ How to set up and run the test suites
 
 ### 🔧 Prerequisites  
 - Node.js & npm  
-- Playwright (`npx playwright install`)  
-- Git (for cloning repo)
+- Git
 
 ### 1. Clone the repo
 ```bash
