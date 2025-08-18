@@ -15,10 +15,10 @@ Here, you will find hands-on projects that showcase my ability to build and main
    UI automation tests were completed using this [demo site](/https://www.saucedemo.com/) with integrated POM classes. 
 
 2. [API testing](./Tests/API/)  
-   API tests were completed by creating a mock api db.
+   API tests were completed by creating a [mock api db](./api-db.json).
 
 3. [SQL testing](./Tests/DB/)  
-   SQL tests were completed by creating a mock sql db.
+   SQL tests were completed by creating a [mock sql db](./setup-sql-db.js).
 
 4. [CI-CD Integration](./.github/workflows/)  
    CI/CD integration was created through Github Actions and are run daily at 3 AM EST.
