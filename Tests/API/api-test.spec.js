@@ -28,7 +28,7 @@ test.describe('Users API', () => {
     const user = await res.json();
 
     expect(user).toMatchObject({
-      id: String(user.id), 
+      id: 1, 
       name: 'Michael',
       email: 'michael@example.com'
     });
