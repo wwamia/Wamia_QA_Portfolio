@@ -28,7 +28,7 @@ test.describe('Users API', () => {
     const user = await res.json();
 
     expect(user).toMatchObject({
-      id: '1', 
+      id: 1, 
       name: 'Michael',
       email: 'michael@example.com'
     });
@@ -60,7 +60,7 @@ test.describe('Tasks API', () => {
     const task = await res.json();
 
     expect(task).toMatchObject({
-      id: '1', 
+      id: 1, 
       title: 'Compiled report',
       completed: false,
       userId: 1
@@ -68,8 +68,8 @@ test.describe('Tasks API', () => {
   });
 
   const taskData = [
-    { id: '1', title: 'Compiled report', completed: false, userId: 1 },
-    { id: '2', title: 'Fixed bug', completed: true, userId: 2 }
+    { id: 1, title: 'Compiled report', completed: false, userId: 1 },
+    { id: 2, title: 'Fixed bug', completed: true, userId: 2 }
   ];
 
   for (const task of taskData) {
