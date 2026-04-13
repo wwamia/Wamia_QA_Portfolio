@@ -28,7 +28,7 @@ test.describe('Users API', () => {
     const user = await res.json();
 
     expect(user).toMatchObject({
-      id: String(task.id), 
+      id: String(user.id), 
       name: 'Michael',
       email: 'michael@example.com'
     });
@@ -60,7 +60,7 @@ test.describe('Tasks API', () => {
     const task = await res.json();
 
     expect(task).toMatchObject({
-      id: String(task.id), 
+      id: 1, 
       title: 'Compiled report',
       completed: false,
       userId: 1
