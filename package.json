@@ -6,7 +6,7 @@
     "sqlite3": "^5.1.7"
   },
   "devDependencies": {
-    "@playwright/test": "^1.54.2",
+    "@playwright/test": "^1.65.1",
     "concurrently": "^9.2.0",
     "kill-port": "^2.0.1",
     "mocha": "^11.7.1",
