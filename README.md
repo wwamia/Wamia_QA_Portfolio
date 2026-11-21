@@ -6,7 +6,7 @@ Here, you will find hands-on projects that showcase my ability to build and main
 ## ✨ About Me
 
 - I am a recent Engineering grad from the University of Waterloo with a passion for software quality.  
-- I have completed 4 SDET/QA co-ops in diverse tech environments, resulting in 2 years of building real-world experience in automation, scripting, and modern testing practices.  
+- I have over 3 years of experience across diverse tech environments, leveraging automation, scripting, and modern testing practices to build efficient, reliable, and high-quality software solutions.  
 - I am now focused on growing my career as a full-time SDET, blending engineering rigor with testing excellence.
 
 ## 📝 Contents within this repo
